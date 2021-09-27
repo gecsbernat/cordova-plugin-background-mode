@@ -223,12 +223,8 @@ public class BackgroundMode extends CordovaPlugin {
      */
     private void updateNotification(JSONObject settings)
     {
-        if (isBind) {
-            try{
-                service.updateNotification(settings);
-            } catch (Exception e) {
-                fireEvent(Event.FAILURE, String.format("'%s'", e.getMessage()));
-            }
+        if (isBind && service != null) {
+            service.updateNotification(settings);
         }
     }
 
