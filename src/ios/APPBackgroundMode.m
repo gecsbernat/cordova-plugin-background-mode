@@ -176,6 +176,9 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
              withOptions:AVAudioSessionCategoryOptionMixWithOthers
                    error:NULL];
 
+    [session setCategory:AVAudioSessionCategoryAmbient
+                   error:NULL];
+
     // Active the audio session
     [session setActive:YES error:NULL];
 };
