@@ -90,6 +90,14 @@ To remove an event listeners:
 cordova.plugins.backgroundMode.un('EVENT', function);
 ```
 
+## iOS specifics
+### Update MainController (hacky for now until I can integrate into plugin)
+Further information can be found in this post https://stackoverflow.com/questions/9660488/ios-avaudioplayer-doesnt-continue-to-next-song-while-in-background
+You need this code in either your first view controller's init or viewDidLoad method:
+```c
+[[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+```
+
 
 ## Android specifics
 
