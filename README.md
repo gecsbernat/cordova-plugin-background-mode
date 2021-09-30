@@ -1,3 +1,5 @@
+## Forked from
+https://github.com/katzer/cordova-plugin-background-mode
 
 <p align="left">
     <b><a href="https://github.com/katzer/cordova-plugin-background-mode/tree/example">SAMPLE APP</a> :point_right:</b>
@@ -23,26 +25,10 @@ Use the plugin by your own risk!
 - __iOS__
 - __Windows__ _(see #222)_
 
-
 ## Installation
-The plugin can be installed via [Cordova-CLI][CLI] and is publicly available on [NPM][npm].
-
-Execute from the projects root folder:
-
-    $ cordova plugin add cordova-plugin-background-mode
-
-Or install a specific version:
-
-    $ cordova plugin add de.appplant.cordova.plugin.background-mode@VERSION
-
-Or install the latest head version:
-
-    $ cordova plugin add https://github.com/katzer/cordova-plugin-background-mode.git
-
-Or install from local source:
-
-    $ cordova plugin add cordova-plugin-background-mode --searchpath <path>
-
+```sh
+ionic cordova plugin add https://github.com/gecsbernat/cordova-plugin-background-mode.git
+```
 
 ## Usage
 The plugin creates the object `cordova.plugins.backgroundMode` and is accessible after the *deviceready* event has been fired.
